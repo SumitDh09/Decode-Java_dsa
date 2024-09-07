@@ -1,4 +1,4 @@
-package QueSOlve;
+package Binarysearch;
 
 class TreeNode {
     int val;
