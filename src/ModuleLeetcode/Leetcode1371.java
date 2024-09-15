@@ -25,7 +25,7 @@ class Leetcode1371 {
 
         public static void main(String[] args) {
             Leetcode1371 solution = new Leetcode1371();
-            String testString = "eleetminicoworoep";
+            String testString = "yisdyfsidouyoroep";
             int result = solution.findTheLongestSubstring(testString);
             System.out.println("The length of the longest substring with even counts of vowels is: " + result);
         }
