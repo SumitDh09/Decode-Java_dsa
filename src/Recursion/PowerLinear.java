@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class PowerLinear {
     public static int pow(int n , int m ){
-        if(m==0)
-            return 1;// base case
+//        if(n==0 || m==0) {
+//            System.out.println("Not defined ");
+//            return -1;// base case
+//        }
+        if (m==0)
+            return 1;
         return n*pow(n,m-1); //call
 
     }
