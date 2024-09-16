@@ -1,5 +1,5 @@
 
-package ModuleLeetcode;
+package LeetcodeProblems;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package ModuleLeetcode;
+package LeetcodeProblems;
 
 public class SmallestdivisorGivenThresholdM3 {
     public int smallestDivisor(int[] nums, int threshold) {

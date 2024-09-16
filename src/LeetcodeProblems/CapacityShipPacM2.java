@@ -1,4 +1,4 @@
-package ModuleLeetcode;
+package LeetcodeProblems;
 
 public class CapacityShipPacM2 {
 
@@ -44,7 +44,7 @@ public class CapacityShipPacM2 {
         // Example usage for testing
         int[] packageWeights = { 10, 20, 30, 40, 50 }; // Your array of package weights
         int days = 3; // Number of days for shipping
-        ModuleLeetcode.CapacityShipPacM2 solver = new ModuleLeetcode.CapacityShipPacM2();
+        LeetcodeProblems.CapacityShipPacM2 solver = new LeetcodeProblems.CapacityShipPacM2();
         int result = solver.shipWithinDays(packageWeights, days);
         System.out.println("Minimum capacity needed: " + result);
     }

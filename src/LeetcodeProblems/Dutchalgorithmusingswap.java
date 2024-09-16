@@ -1,4 +1,4 @@
-package ModuleLeetcode;
+package LeetcodeProblems;
 
 public class Dutchalgorithmusingswap {
     public static void main(String[] args) {

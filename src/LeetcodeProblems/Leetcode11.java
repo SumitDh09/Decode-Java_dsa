@@ -1,4 +1,4 @@
-package ModuleLeetcode;
+package LeetcodeProblems;
 
 public class Leetcode11 {
     public int maxArea(int[] height) {

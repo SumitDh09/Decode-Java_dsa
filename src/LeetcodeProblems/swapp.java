@@ -1,5 +1,5 @@
 
-package ModuleLeetcode;
+package LeetcodeProblems;
 
 public class swapp {
     public static void printhelloworld(){

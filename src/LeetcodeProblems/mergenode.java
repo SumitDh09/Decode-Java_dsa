@@ -1,5 +1,5 @@
 
-package ModuleLeetcode;
+package LeetcodeProblems;
 
 public class mergenode {
     public static class ListNode {

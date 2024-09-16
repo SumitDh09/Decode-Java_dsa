@@ -1,6 +1,6 @@
-package ModuleLeetcode;
-
-public class LC509 {
+package LeetcodeProblems;
+import java.util.Scanner;
+public class LC509usingUserIP {
     public int fib(int n) {
         if (n < 2)
             return n;
@@ -15,10 +15,13 @@ public class LC509 {
 
         return dp[2];
     }
-
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+        scanner.close();
+
         LC509 solution = new LC509();
-        int n = 10; // Example input
         System.out.println("Fibonacci of " + n + " is: " + solution.fib(n));
     }
 }
