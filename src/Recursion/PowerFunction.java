@@ -8,7 +8,7 @@ public class PowerFunction {
 //            System.out.println("Not defined ");
 //            return -1;// base case
 //        }
-        if (m==0)
+        if (m==0)// t.c. 0(log b)
             return 1;
         return n*pow(n,m-1); //call
 
