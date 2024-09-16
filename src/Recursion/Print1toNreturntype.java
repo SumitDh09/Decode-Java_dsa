@@ -1,11 +1,12 @@
 package Recursion;
+
 import java.util.Scanner;
 
-public class FuncCalc {
-    public static int fact(int n ){
+public class Print1toNreturntype {
+    public static int sum(int n ){
         if(n==1 || n==0)
-            return 1;
-        return  n*fact(n-1);
+            return n;// base case
+        return  n+sum(n-1); //call
 
     }
 
@@ -13,6 +14,6 @@ public class FuncCalc {
         Scanner sc = new Scanner(System.in);
         System.out.println(" Enter n number :-");
         int n = sc.nextInt();
-        System.out.println(fact(n));
+        System.out.println(sum(n));
     }
 }
