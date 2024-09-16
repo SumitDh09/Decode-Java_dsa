@@ -2,7 +2,7 @@ package Recursion;
 
 import java.util.Scanner;
 
-public class Print1toNafterRecursivecall {
+public class PrintIncreasingAfterCall {
     public static void print(int n){
         if (n == 0) // this is base case
             return;
