@@ -1,8 +1,5 @@
 package ModuleLeetcode;
-
-
 import java.util.Scanner;
-
 public class LC509usingUserIP {
     public int fib(int n) {
         if (n < 2)
@@ -18,7 +15,6 @@ public class LC509usingUserIP {
 
         return dp[2];
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
