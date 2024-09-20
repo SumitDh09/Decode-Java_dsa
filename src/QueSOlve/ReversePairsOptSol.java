@@ -1,4 +1,4 @@
-package MergeSort;
+package QueSOlve;
 
 import java.util.Arrays;
 
