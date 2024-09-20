@@ -14,7 +14,6 @@ public class LC493 {
             }
         }
     }
-
     public void merge(int[] a, int[] b, int[] c) {
         int i = 0, j = 0, k = 0;
         while (i < a.length && j < b.length) {

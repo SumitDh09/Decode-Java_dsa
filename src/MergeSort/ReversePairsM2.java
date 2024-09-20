@@ -2,7 +2,7 @@ package MergeSort;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
-public class ReversePairs {
+public class ReversePairsM2 {
     // A method for reversing pairs in the array and returning the count
     public int reversePairs(int[] nums) {
         // TreeSet to store unique numbers and their double values
@@ -33,7 +33,7 @@ public class ReversePairs {
     }
 
     public static void main(String[] args) {
-        ReversePairs rp = new ReversePairs();
+        ReversePairsM2 rp = new ReversePairsM2();
         int[] nums = {1, 3, 2, 3, 1};
         int count = rp.reversePairs(nums);
         System.out.println("Count of reverse pairs: " + count);
