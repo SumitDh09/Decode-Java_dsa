@@ -3,7 +3,7 @@ package LeetcodeProblems;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Solution {
+class Some {
     public String largestNumber(int[] nums) {
         int n = nums.length;
         String elements[] = new String[n];
@@ -30,8 +30,8 @@ class Solution {
     public static void main(String[] args) {
         // Example usage
         int[] nums = {3, 30, 34, 5, 9};
-        Solution solution = new Solution();
-        String largestNum = solution.largestNumber(nums);
+        Some some = new Some();
+        String largestNum = some.largestNumber(nums);
         System.out.println("The largest number is: " + largestNum);
     }
 }
