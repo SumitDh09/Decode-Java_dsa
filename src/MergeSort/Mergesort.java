@@ -30,6 +30,10 @@ public class Mergesort {
         mergesort(b);
         //merge these 'a' & 'b'
         merge(a,b,arr);
+        //delete a and b
+        a=null;
+        b=null;
+
     }
     public static void main(String[] args) {
         int[] arr={11, 25, 33, 74,75,80,90,56};
