@@ -1,3 +1,5 @@
+package LeetcodeProblems;
+
 import java.util.Arrays;
 
 public class LCC493 {

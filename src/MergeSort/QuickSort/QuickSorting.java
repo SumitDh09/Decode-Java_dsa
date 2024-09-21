@@ -1,4 +1,4 @@
-package QuickSort;
+package MergeSort.QuickSort;
 
 public class QuickSorting {
     public static void swap(int[] arr, int i, int j) {

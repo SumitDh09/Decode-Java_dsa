@@ -1,4 +1,4 @@
-package QuickSort;
+package MergeSort.QuickSort;
 
 public class QuickSelectAlgorithm {
     //kth smallest element

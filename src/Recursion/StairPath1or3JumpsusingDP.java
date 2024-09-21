@@ -1,3 +1,5 @@
+package Recursion;
+
 public class StairPath1or3JumpsusingDP {
     public static int countWaysDP(int n) {
         int[] dp = new int[n + 1];
