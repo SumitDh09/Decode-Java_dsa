@@ -20,7 +20,7 @@ public class FindTheDuplicateNumber {
         int[] arr = {2, 1, 3, 4, 2}; // Replace with your own array
         FindTheDuplicateNumber duplicateFinder = new FindTheDuplicateNumber();
         int duplicate = duplicateFinder.findDuplicate(arr);
-        System.out.println("Duplicate number: " + duplicate);
+        System.out.println("Find All The Duplicate number: " + duplicate);
     }
 }
 
