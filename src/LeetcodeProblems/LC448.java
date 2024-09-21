@@ -8,7 +8,7 @@ public class LC448 {
         LC448 solution = new LC448();
         int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
         List<Integer> result = solution.findDisappearedNumbers(nums);
-        System.out.println("LC448(Find the disappear number) : " + result);
+        System.out.println("LC448(Find the disappeared number) : " + result);
     }
 
     public void swap(int i, int j, int[] nums) {
