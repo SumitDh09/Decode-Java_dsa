@@ -1,6 +1,6 @@
 package Strings;
 
-public class tringbuilderfunc {
+public class Stringbuilderfunc {
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("abcxduhius");
