@@ -17,7 +17,7 @@ public class QuestionService {
 
         questions[4] = new Question(5, "size of boolean", "1", "2", "4", "8", "1");
 
-//        // boolean size is dpends on jvm dependent thought out the exact value of boolean
+//        // boolean size is depends on jvm dependent thought out the exact value of boolean
 
 
     }
