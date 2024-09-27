@@ -16,7 +16,7 @@ public class ReverseLinkedList {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-        // Printing the original list
+        // Print the original list
         System.out.print("Original List: ");
         printList(head);
 
