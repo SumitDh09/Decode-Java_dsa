@@ -1,4 +1,7 @@
 package LeetcodeProblems;
+
+//LeetCode 66 method 2
+
 class PlusOne2 {
     public static void main(String[] args) {
         PlusOne solution = new PlusOne();
