@@ -4,7 +4,7 @@ package Basics;
 public class ArmstrongusingArray {
 
     public static void main(String[] args) {
-        int[] numbers = {153, 9474, 123, 370, 407};
+        int[] numbers = {153, 9474, 123,1, 370, 407};
 
         for (int n : numbers) {
             int temp = n;
