@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class MinimumStringLengthAfterRemovingSubStrings {
     public static void main(String[] args) {
+        //stack Approach
         MinimumStringLengthAfterRemovingSubStrings stackSolution = new MinimumStringLengthAfterRemovingSubStrings();
         String s1 = "ABFCACDB";
         String s2 = "ACBBD";
