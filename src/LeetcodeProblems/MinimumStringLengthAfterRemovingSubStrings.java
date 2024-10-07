@@ -9,8 +9,10 @@ public class MinimumStringLengthAfterRemovingSubStrings {
         String s1 = "ABFCACDB";
         String s2 = "ACBBD";
 
-        System.out.println("Stack solution - Minimum length of \"" + s1 + "\": " + stackSolution.minLength(s1)); // Output: 2
-        System.out.println("Stack solution - Minimum length of \"" + s2 + "\": " + stackSolution.minLength(s2)); // Output: 5
+        System.out.println("Stack solution - Minimum length of \"" + s1 + "\": " + stackSolution.minLength(s1));
+        // Output: 2
+        System.out.println("Stack solution - Minimum length of \"" + s2 + "\": " + stackSolution.minLength(s2));
+        // Output: 5
     }
 
     public int minLength(String s) {
