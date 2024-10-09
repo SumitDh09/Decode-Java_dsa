@@ -5,28 +5,28 @@ package LeetcodeProblems;
  */
 class ListNodes {
     int val;
-    ListNode next;
+    listnode next;
     ListNodes() {}
     ListNodes(int val) { this.val = val; }
-    ListNodes(int val, ListNode next) { this.val = val; this.next = next; }
+    ListNodes(int val, listnode next) { this.val = val; this.next = next; }
 }
 
 public class OddEvenLinkedList {
     // Helper method to create a linked list from an array
-    public static ListNode createLinkedList(int[] arr) {
+    public static listnode createLinkedList(int[] arr) {
         if (arr == null || arr.length == 0) return null;
-        ListNode head = new ListNode(arr[0]);
-        ListNode current = head;
+        listnode head = new listnode(arr[0]);
+        listnode current = head;
         for (int i = 1; i < arr.length; i++) {
-            current.next = new ListNode(arr[i]);
+            current.next = new listnode(arr[i]);
             current = current.next;
         }
         return head;
     }
 
     // Helper method to print a linked list
-    public static void printLinkedList(ListNode head) {
-        ListNode current = head;
+    public static void printLinkedList(listnode head) {
+        listnode current = head;
         while (current != null) {
             System.out.print(current.val + " -> ");
             current = current.next;
@@ -37,7 +37,7 @@ public class OddEvenLinkedList {
     public static void main(String[] args) {
         // Create a sample linked list: 1 -> 2 -> 3 -> 4 -> 5
         int[] arr = {1, 2, 3, 4, 5};
-        ListNode head = createLinkedList(arr);
+        listnode head = createLinkedList(arr);
 
         System.out.println("Original Linked List:");
         printLinkedList(head);
@@ -46,21 +46,21 @@ public class OddEvenLinkedList {
         OddEvenLinkedList solution = new OddEvenLinkedList();
 
         // Apply odd-even grouping
-        ListNode result = solution.oddEvenList(head);
+        listnode result = solution.oddEvenList(head);
 
         System.out.println("Linked List after odd-even grouping:");
         printLinkedList(result);
     }
 
-    public ListNode oddEvenList(ListNode head) {
+    public listnode oddEvenList(listnode head) {
         // Handle edge cases
         if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode odd = head;
-        ListNode even = head.next;
-        ListNode evenHead = even;
+        listnode odd = head;
+        listnode even = head.next;
+        listnode evenHead = even;
 
         while (even != null && even.next != null) {
             // Connect odd nodes
