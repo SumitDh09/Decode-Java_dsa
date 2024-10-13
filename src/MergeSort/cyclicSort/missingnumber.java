@@ -1,4 +1,4 @@
-package cyclicSort;
+package MergeSort.cyclicSort;
 public class missingnumber {
     public void swap(int i, int j, int[] nums) {
         int temp = nums[i];

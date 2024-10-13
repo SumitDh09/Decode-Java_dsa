@@ -1,4 +1,4 @@
-package cyclicSort;
+package MergeSort.cyclicSort;
 
 public class DuplicateNumber {
     void swap(int i, int j, int[] nums) {

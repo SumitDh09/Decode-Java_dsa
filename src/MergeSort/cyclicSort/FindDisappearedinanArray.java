@@ -1,4 +1,4 @@
-package cyclicSort;
+package MergeSort.cyclicSort;
 
 import java.util.ArrayList;
 import java.util.List;

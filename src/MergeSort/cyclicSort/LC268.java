@@ -1,4 +1,4 @@
-package cyclicSort;
+package MergeSort.cyclicSort;
 class LC268 {
     public int missingNumber(int[] nums) {
         int n = nums.length;
