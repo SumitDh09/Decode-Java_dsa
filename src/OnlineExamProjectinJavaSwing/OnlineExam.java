@@ -1,6 +1,6 @@
 package OnlineExamProjectinJavaSwing;
 
-//*Online Java Paper Test*/
+//Online Java Paper Test
 
 import java.awt.*;
 import java.awt.event.*;
@@ -110,8 +110,8 @@ class OnlineTest extends JFrame implements ActionListener
         jb[4].setSelected(true);
         if(current==0)
         {
-            l.setText("Que1: Which one among these is not a primitive datatype?");
-            jb[0].setText("int");jb[1].setText("Float");jb[2].setText("boolean");jb[3].setText("char");
+            l.setText("Que1: Who is the father of Java?");
+            jb[0].setText("James Gosling");jb[1].setText("Denis Ritchie");jb[2].setText("Brenden eich");jb[3].setText("Guido van Rossum");
         }
         if(current==1)
         {
@@ -130,8 +130,15 @@ class OnlineTest extends JFrame implements ActionListener
         }
         if(current==4)
         {
-            l.setText("Que5: Which institute is best for java coaching?");
-            jb[0].setText("Utek");jb[1].setText("Aptech");jb[2].setText("SSS IT");jb[3].setText("jtek");
+            l.setText("Que5: What will be the output of the folliwng java code ?");
+            class inc{
+                public static void main(String[] args) {
+                    int k =  3;
+                    System.out.println(++k * 8);
+
+                }
+            }
+            jb[0].setText("32");jb[1].setText("33");jb[2].setText("24");jb[3].setText("28");
         }
         if(current==5)
         {
@@ -152,8 +159,8 @@ class OnlineTest extends JFrame implements ActionListener
         }
         if(current==8)
         {
-            l.setText("Que9: which function is not present in Applet class?");
-            jb[0].setText("init");jb[1].setText("main");jb[2].setText("start");jb[3].setText("destroy");
+            l.setText("Que9: Which exception is thrown when java is out of memory ?");
+            jb[0].setText("Memory Error");jb[1].setText("OutOFMemory Error");jb[2].setText("Memory Out oF BoundException");jb[3].setText("Memory full exception");
         }
         if(current==9)
         {
