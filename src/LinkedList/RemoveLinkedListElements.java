@@ -1,23 +1,26 @@
 package LinkedList;
 
-class node {
+class Nade {
     int val;
-    node next;
-    node(int x) { val = x ; }
+    Nade next;
+
+    Nade(int x) { val = x; }
 }
 
 public class RemoveLinkedListElements {
     public static void main(String[] args) {
         RemoveLinkedListElements removeLinkedListElements = new RemoveLinkedListElements();
-        node head = new node(1);
-        head.next = new node(2);
-        head.next.next = new node(6);
-        head.next.next.next = new node(3);
-        head.next.next.next.next = new node(4);
-        head.next.next.next.next.next = new node(5);
-        head.next.next.next.next.next.next = new node(6);
+        Nade head = new Nade(1);
+        head.next = new Nade(2);
+        head.next.next = new Nade(6);
+        head.next.next.next = new Nade(3);
+        head.next.next.next.next = new Nade(4);
+        head.next.next.next.next.next = new Nade(5);
+        head.next.next.next.next.next.next = new Nade(6);
+
         int val = 6;
-        node newHead = removeLinkedListElements.removeElements(head, val);
+        Nade newHead = removeLinkedListElements.removeElements(head, val);
+
         // Print the resulting linked list
         while (newHead != null) {
             System.out.print(newHead.val + " ");
@@ -32,11 +35,12 @@ public class RemoveLinkedListElements {
      * @param val the value to be removed
      * @return the new head of the linked list
      */
-    public node removeElements(node head, int val) {
+    public Nade removeElements(Nade head, int val) {
         // Create a dummy node to simplify the edge case where the head node needs to be removed
-        node dummy = new node(0);
+        Nade dummy = new Nade(0);
         dummy.next = head;
-        node prev = dummy;
+        Nade prev = dummy;
+
         // Iterate through the linked list
         while (prev.next != null) {
             // If the current node's value matches the given val, skip it
@@ -47,6 +51,7 @@ public class RemoveLinkedListElements {
                 prev = prev.next;
             }
         }
+
         // Return the new head of the linked list
         return dummy.next;
     }
