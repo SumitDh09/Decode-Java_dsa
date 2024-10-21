@@ -14,10 +14,17 @@ public class ListNodeClass {
         Node e = new Node(50);//        Node f = new Node(60);////
         // System.out.println(e.val);
 
-        a.next=b;
-        b.next=c;
-        c.next=d;
-        d.next=e;
+        a.next = b;
+        b.next = c;
+        c.next = d;
+        d.next = e;
+        Node temp = a;
+        for (int i = 0; i <= 5; i++) {
+            System.out.println(temp.val);
+            temp = temp.next;
+        }
+
+
         System.out.println(a.val);
         System.out.println(b.val);
         System.out.println(c.val);
@@ -27,6 +34,7 @@ public class ListNodeClass {
         System.out.println(a.next.next.val);
         System.out.println(a.next.next.next.val);
         System.out.println(a.next.next.next.next.val);
+
     }
 }
 
