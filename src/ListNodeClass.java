@@ -4,7 +4,15 @@ class Node {
     Node(int val){
         this.val = val;
     }
-}//class Car{//    String name;//    int price;////    Car(String name, int price) {//        this.name = name;//        this.price = price;//    }//}
+}
+//class Car{
+//    String name;//
+//    int price;////
+//    Car(String name, int price) {//
+//    this.name = name;//
+//    this.price = price;//
+//    }//
+//  }
 public class ListNodeClass {
     public static void main(String[] args) {
         Node a = new Node(10);
