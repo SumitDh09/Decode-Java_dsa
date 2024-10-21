@@ -8,8 +8,17 @@ class nums {
 }
 
 public class ShallowCopyoFaNode {
+
+    public static void print(nums head) {
+        nums temp = head;
+        while (temp != null) {
+            System.out.println(temp.val);
+            temp = temp.next;
+        }
+    }
+
     public static void main(String[] args) {
-        nums a = new nums(100);
+        nums a = new nums(10);
         System.out.println(a.val);
         nums temp = a; // shallow copy
         // nums temp = new nums(100); // deep copy
@@ -22,18 +31,19 @@ public class ShallowCopyoFaNode {
         nums c = new nums(30);
         nums d = new nums(40);
         nums e = new nums(50);
-        // nums f = new nums(60);
+        nums f = new nums(60);
         // System.out.println(e.val);
 
         a.next = b;
         b.next = c;
         c.next = d;
         d.next = e;
+        e.next = f;
 
-        temp = a;
-        while (temp != null) {
-            System.out.println(temp.val);
-            temp = temp.next;
-        }
+        print(a);
+        //     temp = a;
+//        while (temp != null) {
+//            System.out.println(temp.val);
+//            temp = temp.next;
     }
 }
