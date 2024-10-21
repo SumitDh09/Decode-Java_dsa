@@ -23,6 +23,10 @@ public class ListNodeClass {
         System.out.println(c.val);
         System.out.println(d.val);
         System.out.println(e.val);
+        System.out.println(a.next.val);
+        System.out.println(a.next.next.val);
+        System.out.println(a.next.next.next.val);
+        System.out.println(a.next.next.next.next.val);
     }
 }
 
