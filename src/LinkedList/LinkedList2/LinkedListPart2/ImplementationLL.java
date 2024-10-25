@@ -1,4 +1,5 @@
 package LinkedList.LinkedList2.LinkedListPart2;
+ 
 
 class SLL {
     private Node head;
@@ -24,6 +25,29 @@ class SLL {
             temp.next = head;
             head = temp;
         }
+        size++;
+    }
+
+    void insert(int idx, int val) {
+        if (idx < 0 || idx > size) {
+            System.out.println("Index out of bounds");
+            return;
+        }
+        if (idx == 0) {
+            insertAtHead(val);
+            return;
+        }
+        if (idx == size) {
+            insertAtTail(val);
+            return;
+        }
+        Node temp = new Node(val);
+        Node prev = head;
+        for (int i = 0; i < idx - 1; i++) {
+            prev = prev.next;
+        }
+        temp.next = prev.next;
+        prev.next = temp;
         size++;
     }
 
@@ -54,5 +78,8 @@ public class ImplementationLL {
         list.display(); // Show list after another tail insertion
         list.insertAtHead(50);
         list.display(); // Show list after head insertion
+        list.insert(2, 40);
+        list.display(); // Show list after insertion at index 2
+        list.size(); // Show final size
     }
 }
