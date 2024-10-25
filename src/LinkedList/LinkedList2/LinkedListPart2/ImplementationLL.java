@@ -35,14 +35,19 @@ public class ImplementationLL {
         SLL ll =  new SLL();
         SLL list = new SLL();
 //        list.addAtTail(10);
-        list.insertAtEnd(10);
-        list.insertAtEnd(20);
-        list.insertAtEnd(50);
-        list.insertAtEnd(40);
+         list.insertAtEnd(10);
+         list.insertAtEnd(20);
+         list.insertAtEnd(50);
+         list.insertAtEnd(40);
 
-       list.display();
-       list.insertAtEnd(24);
-       list.display();
+         list.display();
+         list.insertAtEnd(24);
+         list.display();
+        System.out.println(list.size);
+        list.insertAtEnd(25);
+        list.insertAtEnd(28);
+        System.out.println(list.size);
+        list.display();
 
     }
 }
