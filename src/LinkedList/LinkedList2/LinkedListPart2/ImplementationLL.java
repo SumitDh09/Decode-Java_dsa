@@ -1,53 +1,58 @@
 package LinkedList.LinkedList2.LinkedListPart2;
 
+class SLL {
+    private Node head;
+    private Node tail;
+    private int size;
 
-
-class SLL{
-     //user defined data structure
-    Node head;
-    Node tail;
-    int size;
-
-    void insertAtEnd(int val){
+    void insertAtTail(int val) {
         Node temp = new Node(val);
-        if (head == null) head = tail =  temp;
-        else{
-                tail.next = temp;
-                tail = temp;
+        if (head == null) {
+            head = tail = temp;
+        } else {
+            tail.next = temp;
+            tail = temp;
         }
-
+        size++;
     }
-    void display(){
-      Node temp =head;
-      while (temp!= null){
-            System.out.println(temp.val+ " ");
+
+    void insertAtHead(int val) {
+        Node temp = new Node(val);
+        if (head == null) {
+            head = tail = temp;
+        } else {
+            temp.next = head;
+            head = temp;
+        }
+        size++;
+    }
+
+    void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.val + " ");
             temp = temp.next;
-      }
-      System.out.println();
-
-
+        }
+        System.out.println();
     }
 
+    void size() {
+        System.out.println("size is :" + size);
+    }
 }
+
 public class ImplementationLL {
-    
     public static void main(String[] args) {
-        SLL ll =  new SLL();
         SLL list = new SLL();
-//        list.addAtTail(10);
-         list.insertAtEnd(10);
-         list.insertAtEnd(20);
-         list.insertAtEnd(50);
-         list.insertAtEnd(40);
-
-         list.display();
-         list.insertAtEnd(24);
-         list.display();
-        System.out.println(list.size);
-        list.insertAtEnd(25);
-        list.insertAtEnd(28);
-        System.out.println(list.size);
-        list.display();
-
+        list.size(); // Show initial size
+        list.insertAtTail(10);
+        list.insertAtTail(20);
+        list.insertAtTail(50);
+        list.insertAtTail(40);
+        list.display(); // Show list after tail insertions
+        list.insertAtTail(40);
+        list.display(); // Show list after another tail insertion
+        list.insertAtHead(50);
+        list.display(); // Show list after head insertion
     }
 }
