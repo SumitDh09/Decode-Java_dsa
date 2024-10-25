@@ -7,9 +7,6 @@ class Node {
     Node(int val) {
         this.val = val;
     }
-}
-
-public class LinkedListNode {
     public static void main(String[] args) {
         Node a = new Node(10);
         Node b = new Node(20);

@@ -1,4 +1,4 @@
-package LinkedListPart2;
+package LinkedList.LinkedList2.LinkedListPart2;
 
 class Node {
     int val;

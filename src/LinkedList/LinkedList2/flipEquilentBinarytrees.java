@@ -1,4 +1,4 @@
-package LinkedList2;
+package LinkedList.LinkedList2;
 
 /**
  * Definition for a binary tree node.
