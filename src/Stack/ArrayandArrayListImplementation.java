@@ -35,6 +35,12 @@ public class ArrayandArrayListImplementation {
 
         System.out.println("Pop: " + st.pop()); // Should display "The stack is empty"
         System.out.println(st.isEmpty());
+
+        st.push(50);
+        st.push(60);
+        st.display();
+        System.out.println(st.isFull());
+        st.push(70);
     }
 
     public static class Stack {
