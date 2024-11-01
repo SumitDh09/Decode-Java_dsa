@@ -1,13 +1,12 @@
 package LeetcodeProblems;
-
 import java.util.Stack;
-
 public class RemoveAdjacentDuplicates {
     public static void main(String[] args) {
         RemoveAdjacentDuplicates obj = new RemoveAdjacentDuplicates();
         String testString = "abbaca";
         String result = obj.removeDuplicates(testString);
-        System.out.println("Resulting string: " + result); // Expected output: "ca"
+        System.out.println("Resulting string: " + result);
+        // Expected output: "ca"
     }
 
     public String removeDuplicates(String s) {
