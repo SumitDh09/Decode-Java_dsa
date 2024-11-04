@@ -9,9 +9,9 @@ class ListNode {
     }
 }
 
-class AdddTwoNumber {
+class AddTwoNumber {
     public static void main(String[] args) {
-        AdddTwoNumber obj = new AdddTwoNumber();
+        AddTwoNumber obj = new AddTwoNumber();
 
         // Creating two linked lists
         ListNode l1 = new ListNode(2);
