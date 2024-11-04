@@ -1,4 +1,4 @@
-package LeetcodeProblems.GFG;
+package Stack;
 
 import java.util.Stack;
 
