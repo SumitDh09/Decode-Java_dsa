@@ -1,6 +1,8 @@
 package LeetcodeProblems;
 
 public class StringCompressor {
+
+//    Lc  String compressor III
     public static void main(String[] args) {
         StringCompressor obj = new StringCompressor();
         String word1 = "abcde";
