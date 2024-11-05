@@ -1,7 +1,7 @@
 
 package ModuleLeetcode;
 
-public class mergenode {
+public class MergeNode {
     public static ListNode mergeNodes(ListNode head) {
         ListNode node = head;
         while (node != null) {
