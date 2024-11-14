@@ -1,14 +1,13 @@
 package Project.TicTacToe;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
         char[][] board = new char[3][3];
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[row].length; col++) {
-                board[row][col] = ' ';
-            }
+        for (char[] chars : board) {
+            Arrays.fill(chars, ' ');
         }
 
         char player = 'X';
@@ -45,8 +44,8 @@ public class Game {
 
     public static boolean haveWon(char[][] board, char player) {
         // Check the rows
-        for (int row = 0; row < board.length; row++) {
-            if (board[row][0] == player && board[row][1] == player && board[row][2] == player) {
+        for (char[] chars : board) {
+            if (chars[0] == player && chars[1] == player && chars[2] == player) {
                 return true;
             }
         }
@@ -63,17 +62,13 @@ public class Game {
             return true;
         }
 
-        if (board[0][2] == player && board[1][1] == player && board[2][0] == player) {
-            return true;
-        }
-
-        return false;
+        return board[0][2] == player && board[1][1] == player && board[2][0] == player;
     }
 
     public static boolean isBoardFull(char[][] board) {
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[row].length; col++) {
-                if (board[row][col] == ' ') {
+        for (char[] chars : board) {
+            for (char aChar : chars) {
+                if (aChar == ' ') {
                     return false;
                 }
             }
