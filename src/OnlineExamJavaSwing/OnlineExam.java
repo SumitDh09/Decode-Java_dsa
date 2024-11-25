@@ -1,4 +1,4 @@
-package OnlineExamProjectinJavaSwing;
+package OnlineExamJavaSwing;
 
 import java.awt.event.*;
 import javax.swing.*;
