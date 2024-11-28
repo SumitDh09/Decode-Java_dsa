@@ -39,8 +39,7 @@ public class BinaryTreePOSTORDER {
             ans.add(root.val);
             if (root.left != null)
                 stack.push(root.left);
-            if (root.right != null)
-                stack.push(root.right);
+            if (root.right != null)stack.push(root.right);
         }
 
         Collections.reverse(ans);
