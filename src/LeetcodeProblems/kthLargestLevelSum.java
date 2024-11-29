@@ -20,33 +20,33 @@ import java.util.*;
  */
 class kthLargestLevelSum {
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(5);
-        root.left = new TreeNode(8);
-        root.right = new TreeNode(9);
-        root.left.left = new TreeNode(2);
-        root.left.right = new TreeNode(1);
-        root.right.left = new TreeNode(3);
-        root.right.right = new TreeNode(7);
-        root.left.left.left = new TreeNode(4);
-        root.left.left.right = new TreeNode(6);
+        TrEeNode root = new TrEeNode(5);
+        root.left = new TrEeNode(8);
+        root.right = new TrEeNode(9);
+        root.left.left = new TrEeNode(2);
+        root.left.right = new TrEeNode(1);
+        root.right.left = new TrEeNode(3);
+        root.right.right = new TrEeNode(7);
+        root.left.left.left = new TrEeNode(4);
+        root.left.left.right = new TrEeNode(6);
 
         kthLargestLevelSum solution = new kthLargestLevelSum();
         int k = 2;
         System.out.println("The " + k + "th largest level sum is: " + solution.kthLargestLevelSum(root, k));
     }
 
-    public long kthLargestLevelSum(TreeNode root, int k) {
+    public long kthLargestLevelSum(TrEeNode root, int k) {
         // BF
         // max heap
         //bfs - min heap.
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<TrEeNode> queue = new LinkedList<>();
         PriorityQueue<Long> pq = new PriorityQueue<>();
         queue.offer(root);
         while(!queue.isEmpty()){
             int size = queue.size();
             long sum = 0l;
             for(int i=0;i<size;i++){
-                TreeNode node = queue.poll();
+                TrEeNode node = queue.poll();
                 sum += node.val;
                 if(node.left!=null){
                     queue.offer(node.left);
