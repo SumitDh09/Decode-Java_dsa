@@ -1,5 +1,5 @@
 
-package ModuleLeetcode;
+package LeetcodeProblems.ModuleLeetcode;
 
 public class MergeNode {
     public static ListNode mergeNodes(ListNode head) {

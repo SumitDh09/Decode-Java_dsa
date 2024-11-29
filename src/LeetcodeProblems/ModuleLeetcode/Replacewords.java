@@ -1,5 +1,5 @@
 
-package ModuleLeetcode;
+package LeetcodeProblems.ModuleLeetcode;
 
 import java.util.*;
 public class Replacewords {

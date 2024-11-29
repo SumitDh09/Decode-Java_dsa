@@ -1,4 +1,4 @@
-package ModuleLeetcode;
+package LeetcodeProblems.ModuleLeetcode;
 
 public class Leetcode11 {
     public static void main(String[] args) {
