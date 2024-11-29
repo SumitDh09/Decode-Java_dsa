@@ -34,3 +34,43 @@ class Solution {
         return levels(root.left) + levels(root.right);
     }
 }
+/*class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int val) {
+        this.val = val;
+    }
+}
+
+class DiameterOfBinaryTree {
+    private int ans = 0;
+
+    public int diameterOfBinaryTree(TreeNode root) {
+        maxDepth(root);
+        return ans;
+    }
+
+    int maxDepth(TreeNode root) {
+        if (root == null)
+            return 0;
+
+        final int l = maxDepth(root.left);
+        final int r = maxDepth(root.right);
+        ans = Math.max(ans, l + r);
+        return 1 + Math.max(l, r);
+    }
+
+    public static void main(String[] args) {
+        DiameterOfBinaryTree solution = new DiameterOfBinaryTree();
+
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+
+        System.out.println("Diameter of the binary tree: " + solution.diameterOfBinaryTree(root)); // Expected output: 3
+    }
+}
+*/
