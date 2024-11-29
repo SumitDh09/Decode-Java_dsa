@@ -18,30 +18,30 @@ class TreeeNode {
 public class BinaryTreeRightSideView {
     public static void main(String[] args) {
         // Creating a sample binary tree
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.right = new TreeNode(5);
-        root.right.right = new TreeNode(4);
+        TreNode root = new TreNode(1);
+        root.left = new TreNode(2);
+        root.right = new TreNode(3);
+        root.left.right = new TreNode(5);
+        root.right.right = new TreNode(4);
 
         BinaryTreeRightSideView obj = new BinaryTreeRightSideView();
         System.out.println("Right side view: " + obj.rightSideView(root));
         // Expected output: [1, 3, 4]
     }
 
-    public List<Integer> rightSideView(TreeNode root) {
+    public List<Integer> rightSideView(TreNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) {
             return result;
         }
 
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<TreNode> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
             int levelSize = queue.size();
             for (int i = 0; i < levelSize; i++) {
-                TreeNode currentNode = queue.poll();
+                TreNode currentNode = queue.poll();
                 if (i == levelSize - 1) {
                     result.add(currentNode.val);
                 }

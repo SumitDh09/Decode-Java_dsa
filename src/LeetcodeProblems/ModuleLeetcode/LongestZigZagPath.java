@@ -2,8 +2,8 @@ package LeetcodeProblems.ModuleLeetcode;
 
 class TreeNode {
     int val;
-    TreeNode left;
-    TreeNode right;
+    TreNode left;
+    TreNode right;
 
     TreeNode(int val) {
         this.val = val;
@@ -15,25 +15,25 @@ public class LongestZigZagPath {
 
     public static void main(String[] args) {
         // Creating a sample binary tree
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(1);
-        root.right.left = new TreeNode(1);
-        root.right.right = new TreeNode(1);
-        root.right.left.right = new TreeNode(1);
-        root.right.right.left = new TreeNode(1);
-        root.right.right.right = new TreeNode(1);
+        TreNode root = new TreNode(1);
+        root.right = new TreNode(1);
+        root.right.left = new TreNode(1);
+        root.right.right = new TreNode(1);
+        root.right.left.right = new TreNode(1);
+        root.right.right.left = new TreNode(1);
+        root.right.right.right = new TreNode(1);
 
         LongestZigZagPath obj = new LongestZigZagPath();
         System.out.println("Longest ZigZag path length: " + obj.longestZigZag(root)); // Expected output: 3
     }
 
-    public int longestZigZag(TreeNode root) {
+    public int longestZigZag(TreNode root) {
         dfs(root, true, 0);
         dfs(root, false, 0);
         return maxLength;
     }
 
-    private void dfs(TreeNode node, boolean isLeft, int length) {
+    private void dfs(TreNode node, boolean isLeft, int length) {
         if (node == null) {
             return;
         }
