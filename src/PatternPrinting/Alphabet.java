@@ -17,6 +17,7 @@ public class Alphabet {
 
             System.out.println();
         }
+        sc.close();
 
     }
 }
