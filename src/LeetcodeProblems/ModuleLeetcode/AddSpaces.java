@@ -14,7 +14,7 @@ public class AddSpaces {
 
         String s3 = "Icodeinpython";
         int[] spaces3 = {1, 5, 7, 9};
-        System.out.println("Modified string : " + solution.addSpaces(s3, spaces3)); // Expected output: "i code in py thon"
+        System.out.println("Modified string : " + solution.addSpaces(s3, spaces3)); // Expected output: "I code in py thon"
     }
 
     public String addSpaces(String s, int[] spaces) {
