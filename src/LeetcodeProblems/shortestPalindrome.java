@@ -1,6 +1,6 @@
 package LeetcodeProblems;
 
-class Solution {
+class shortestPalindrome {
     public String makePalindrome(String s) {
         int length = s.length();
         if (length == 0)
@@ -19,7 +19,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        shortestPalindrome solution = new shortestPalindrome();
         String input = "abcd";
         String result = solution.makePalindrome(input);
         System.out.println("Shortest palindrome: " + result);
