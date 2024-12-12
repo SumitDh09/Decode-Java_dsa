@@ -85,6 +85,7 @@ public class TakeGiftsFromTheRichestPile {
         long result = solution.pickGifts(g, k);
         System.out.println("Maximum possible sum of gifts: " + result);
     }
+
 }
 
  */
