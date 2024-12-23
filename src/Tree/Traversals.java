@@ -2,7 +2,7 @@ package Tree;
 
 class Nodeee {
     int val;
-   Nodeee left;
+    Nodeee left;
     Nodeee right;
     Nodeee(int val){
         this.val = val;
