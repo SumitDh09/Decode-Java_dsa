@@ -9,6 +9,7 @@ class Nodie {
     Nodie(int val){
         this.val = val;
 
+
     }
 }
 public class LevelTraversal {
