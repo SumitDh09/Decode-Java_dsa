@@ -1,4 +1,4 @@
-package LeetcodeProblems.ModuleLeetcode.LeetcodeProblem2;
+package LeetcodeProblems.LeetcodeProblem2;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package LeetcodeProblems.ModuleLeetcode.LeetcodeProblem2;
+package LeetcodeProblems.LeetcodeProblem2;
 
 class TReeNode {
     int val;
