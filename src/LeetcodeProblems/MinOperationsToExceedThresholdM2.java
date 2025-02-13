@@ -2,9 +2,9 @@ package LeetcodeProblems;
 
 import java.util.PriorityQueue;
 
-public class MinOperationsToExceedThreshold {
+public class MinOperationsToExceedThresholdM2 {
     public static void main(String[] args) {
-        MinOperationsToExceedThreshold sol = new MinOperationsToExceedThreshold();
+        MinOperationsToExceedThresholdM2 sol = new MinOperationsToExceedThresholdM2();
 
         int[] nums1 = {2, 11, 10, 1, 3};
         int k1 = 10;
@@ -20,17 +20,19 @@ public class MinOperationsToExceedThreshold {
     }
 
     public int minOperations(int[] nums, int k) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueue<Long> pq = new PriorityQueue<>();
         for (int num : nums) {
-            pq.offer(num);
+            pq.add((long) num);
         }
-        int operations = 0;
-        while (pq.size() > 1 && pq.peek() < k) {
-            int x = pq.poll();
-            int y = pq.poll();
-            pq.offer(2 * x + y);
-            operations++;
+        long cnt = 0;
+        while (pq.peek() < k) {
+            if (pq.size() < 2) return -1; // if we don't have at least two elements, return -1
+            long first = pq.poll();
+            long second = pq.poll();
+            long num = 2 * Math.min(first, second) + Math.max(first, second);
+            pq.add(num);
+            cnt++;
         }
-        return pq.peek() >= k ? operations : -1;
+        return (int) cnt;
     }
 }
