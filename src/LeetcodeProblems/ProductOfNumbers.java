@@ -26,6 +26,7 @@ class ProductOfNumbers {
          System.out.println(productOfNumbers.getProduct(4));
          // Output: 0  (0 * 2 * 5 * 4)
 
+
          productOfNumbers.add(8);   // [3, 0, 2, 5, 4, 8]
 
          System.out.println(productOfNumbers.getProduct(2));
