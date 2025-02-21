@@ -1,4 +1,4 @@
-package GeekForGeeks;
+package GeekForGeeksQue;
 
 public class BeautifulSubsequences {
     static final int MOD = 1000000007;

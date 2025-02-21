@@ -1,4 +1,4 @@
-package GeekForGeeks;
+package GeekForGeeksQue;
 
 import java.util.Arrays;
 
