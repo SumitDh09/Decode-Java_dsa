@@ -1,5 +1,4 @@
-package GeekForGeeks160Que;
-import java.util.Arrays;
+package GeekForGeeks;
 
 public class BeautifulSubsequences {
     static final int MOD = 1000000007;

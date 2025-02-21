@@ -1,4 +1,4 @@
-package GeekForGeeks160Que;
+package GeekForGeeks;
 
 
 public class SecondLargestElement {
