@@ -1,0 +1,617 @@
+Notes :--
+ Chapter-1:-
+ Data Type :- Every data type has a fixed value.
+ Data types in Java are of different sizes and values that can be stored in the variable that is made as per convenience and circumstances to cover up all test cases. Java has two categories in which data types are segregated
+
+ ->Primitive Data Type: such as boolean, char, int, short, byte, long, float, and double. The Boolean with uppercase B is a wrapper class for the primitive data type boolean in Java.
+ ->Non-Primitive Data Type or Object Data type: such as String, Array, etc.
+
+Primitive Data Types in Java :-
+->Primitive data are only single values and have no special capabilities.  There are 8 primitive data types. They are depicted below in tabular format below as follows.
+
+1. boolean Data Type :- Size : Virtual machine dependent (typically 1 byte, 8 bits).
+
+2. byte Data Type :- Size : 1 byte (8 bits).
+
+3. short Data Type :- Size : 2 bytes (16 bits).
+
+4. int Data Type :- Size : 4 bytes ( 32 bits ).
+
+In Java SE 8 and later, we can use the int data type to represent an unsigned 32-bit integer, which has a value in the range [0, 2  32  -1]. Use the Integer class to use the int data type as an unsigned integer.
+
+5. long Data Type :- Size : 8 bytes (64 bits).
+
+In Java SE 8 and later, you can use the long data type to represent an unsigned 64-bit long, which has a minimum value of 0 and a maximum value of 2  64  -1. The Long class also contains methods like comparing Unsigned, divide Unsigned, etc to support arithmetic operations for unsigned long.
+
+6. float Data Type :- Size : 4 bytes (32 bits).
+
+7. double Data Type :- Size : 8 bytes (64 bits).
+
+Both float and double data types were designed especially for scientific calculations, where approximation errors are acceptable. If accuracy is the most prior concern then, it is recommended not to use these data types and use BigDecimal class instead.
+
+8. char Data Type :- Size : 2 bytes (16 bits).
+
+
+Non-Primitive (Reference) Data Types
+The Non-Primitive (Reference) Data Types will contain a memory address of variable values because the reference types won’t store the variable value directly in memory. They are strings, objects, arrays, etc.
+
+1. Strings :-Syntax: Declaring a string.
+
+2. Class :-A Class is a user-defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order:
+
+Modifiers : A class can be public or has default access. Refer to access specifiers for classes or interfaces in Java
+
+Class name: The name should begin with an initial letter (capitalized by convention).
+
+Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+
+Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+
+Body: The class body is surrounded by braces, { }.
+
+3. Object
+
+An Object is a basic unit of Object-Oriented Programming and represents real-life entities.  A typical Java program creates many objects, which as you know, interact by invoking methods. An object consists of :
+
+State : It is represented by the attributes of an object. It also reflects the properties of an object.
+
+Behavior : It is represented by the methods of an object. It also reflects the response of an object to other objects.
+
+Identity : It gives a unique name to an object and enables one object to interact with other objects.
+
+4. Interface
+
+Like a class, an interface can have methods and variables, but the methods declared in an interface are by default abstract (only method signature, no body).
+
+Interfaces specify what a class must do and not how. It is the blueprint of the class.
+
+An Interface is about capabilities like a Player may be an interface and any class implementing Player must be able to (or must implement) move(). So it specifies a set of methods that the class has to implement.
+
+If a class implements an interface and does not provide method bodies for all functions specified in the interface, then the class must be declared abstract.
+
+A Java library example is Comparator Interface . If a class implements this interface, then it can be used to sort a collection.
+
+5. Array
+
+An Array is a group of like-typed variables that are referred to by a common name. Arrays in Java work differently than they do in C/C++. The following are some important points about Java arrays.
+
+In Java, all arrays are dynamically allocated. (discussed below)
+
+Since arrays are objects in Java, we can find their length using member length. This is different from C/C++ where we find length using size.
+
+A Java array variable can also be declared like other variables with [] after the data type.
+
+The variables in the array are ordered and each has an index beginning with 0.
+
+Java array can also be used as a static field, a local variable, or a method parameter.
+
+The size of an array must be specified by an int value and not long or short.
+
+The direct superclass of an array type is Object.
+
+Every array type implements the interfaces Cloneable and java.io.Serializable.
+
+
+Chapter-2:-
+
+Basic :-
+
+    Contain a-z ,A-z ,0-9 ,_ ,$
+    0-9 cant start a name of a class
+    No blank space
+    Reserved keyword's
+    Classes and Interfaces
+
+    Class names should be nouns, in mixed cases with the first letter of each internal word capitalized. Interfaces names should also be capitalized just like class names.
+    Use whole words and must avoid acronyms and abbreviations.
+            Classes: class Student { }
+    class Integer {}
+    class Scanner {}
+    Interfaces : Runnable
+            Remote
+    Serializable.
+
+    Type 2: Methods
+
+    Methods should be verbs, in mixed case with the first letter lowercase and with the first letter of each internal word capitalized.
+    public static void main(String [] args)  {}
+    As the name suggests the method is supposed to be primarily method which indeed it is as main() method in java is the method from where the program begins its execution.
+
+    Type 3: Variables
+
+    Variable names should be short yet meaningful.
+
+    Variable names should not start with underscore _ or dollar sign $ characters, even though both are allowed.
+    Should be mnemonic i.e, designed to indicate to the casual observer the intent of its use.
+    One-character variable names should be avoided except for temporary variables.
+    Common names for temporary variables are i, j, k, m, and n for integers; c, d, and e for characters.
+    int[] marks;
+    double  answer,
+    As the name suggests one stands for marks while the other for an answer be it of any e do not mind.
+
+    Type 4: Constant variables
+
+    Should be all uppercase with words separated by underscores (“_”).
+    There are various constants used in predefined classes like Float, Long, String etc.
+            num = PI;
+    Type 5: Packages
+
+The prefix of a unique package name is always written in all-lowercase ASCII letters and should be one of the top-level domain names, like com, edu, gov, mil, net, org.
+
+Subsequent components of the package name vary according to an organization’s own internal naming conventions.
+
+java.util.Scanner ;
+
+java.io.*;
+
+As the name suggests in the first case we are trying to access the Scanner class from the java.util package and in other all classes(* standing for all) input-output classes making it so easy for another programmer to identify.
+
+Chapter-3:-
+Methods :-
+Java Methods are blocks of code that perform a specific task. A method allows us to reuse code, improving both efficiency and organization. All methods in Java must belong to a class. Methods are similar to functions and expose the behavior of objects.
+
+Example:
+
+// Creating a method
+// that prints a message
+public class Method {
+
+    // Method to print message
+    public void printMessage() {
+        System.out.println("Hello, Geeks!");
+    }
+
+    public static void main(String[] args) {
+
+        // Create an instance of the Method class
+        Method m = new Method();
+        m.printMessage();  // Calling the method
+    }
+}
+
+Output
+Hello, Geeks!
+Explanation: In this example, printMessage() is a simple method that prints a message. It has no parameters and does not return anything.
+
+Syntax of a Method
+<access_modifier> <return_type> <method_name>( list_of_parameters)
+{
+    //body
+}
+
+
+Key Components of a Method Declaration
+Modifier: It specifies the method’s access level (e.g., public, private, protected, or default).
+Return Type: The type of value returned, or void if no value is returned.
+Method Name: It follows Java naming conventions; it should start with a lowercase verb and use camel case for multiple words.
+Parameters: A list of input values (optional). Empty parentheses are used if no parameters are needed.
+Exception List: The exceptions the method might throw (optional).
+Method Body: It contains the logic to be executed (optional in the case of abstract methods).
+Method Body in Java
+Components of a method
+
+Types of Methods in Java
+1. Predefined Method
+Predefined methods are the method that is already defined in the Java class libraries. It is also known as the standard library method or built-in method.
+
+Example:
+
+Math.random()    // returns random value
+
+
+Math.PI()     // return pi value
+
+
+2. User-defined Method
+The method written by the user or programmer is known as a user-defined method. These methods are modified according to the requirement.
+
+Example:
+
+sayHello         // user define method created above in the article
+
+
+Greet()
+
+
+setName()
+
+
+Different Ways to Create Java Method
+There are two ways to create a method in Java:
+
+1. Instance Method: Access the instance data using the object name. Declared inside a class.
+
+Example:
+
+// Instance Method
+
+
+void method_name() {
+
+
+    // instance method body
+
+
+
+}
+
+
+2. Static Method: Access the static data using class name. Declared inside class with static keyword.
+
+Example:
+
+// Static Method
+
+
+static void method_name() {
+
+
+    // static method body
+
+
+
+}
+
+
+Method Signature
+It consists of the method name and a parameter list.
+
+number of parameters
+type of the parameters
+order of the parameters
+Note: The return type and exceptions are not considered as part of it.
+
+Method Signature of the above function:
+
+ max(int x, int y) Number of parameters is 2, Type of parameter is int.
+
+
+Naming a Method
+In Java language method name is typically a single word that should be a verb in lowercase or a multi-word, that begins with a verb in lowercase followed by an adjective, noun. After the first word, the first letter of each word should be capitalized.
+
+Rules to Name a Method:
+
+While defining a method, remember that the method name must be a verb and start with a lowercase letter.
+If the method name has more than two words, the first name must be a verb followed by an adjective or noun.
+In the multi-word method name, the first letter of each word must be in uppercase except the first word. For example, findSum, computeMax, setX, and getX.
+Generally, a method has a unique name within the class in which it is defined but sometimes a method might have the same name as other method names within the same class as method overloading is allowed in Java.
+
+Method Calling
+Method calling allows to reuse code and organize our program effectively. The method needs to be called for use its functionality. There can be three situations when a method is called:
+A method returns to the code that invoked it when:
+
+It completes all the statements in the method.
+It reaches a return statement.
+Throws an exception.
+Example 1: Method calling using object
+
+
+
+
+class Add {
+    int s = 0;
+    public int addTwoInt(int a, int b) {
+        s = a + b;
+        return s;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Add a = new Add();
+        int res = a.addTwoInt(1, 2);
+        System.out.println("Sum: " + res);
+    }
+}
+
+Output
+Sum: 3
+
+Example 2: Calling Methods in Different Ways
+
+
+
+
+// Java Program to Illustrate Method Calling
+import java.io.*;
+
+// Helper class
+class Test {
+
+    public static int i = 0;
+
+    // Constructor to count objects
+    Test() {
+        i++;
+    }
+
+    // Static method to get the
+    // number of objects created
+    public static int get() {
+        return i;
+    }
+
+    // Instance method m1 calling
+    // another method m2
+    public int m1() {
+        System.out.println("Inside the method m1");
+        this.m2();  // Calling m2 method
+        return 1;
+    }
+
+    // Method m2 that prints a message
+    public void m2() {
+        System.out.println("In method m2");
+    }
+}
+
+// Main class
+class Geeks {
+
+    // Main driver method
+    public static void main(String[] args) {
+
+        // Creating object of Test class
+        Test obj = new Test();
+
+        // Calling m1 method
+        int i = obj.m1();
+        System.out.println("Control returned after m1: " + i);
+
+        // Get and print the number of objects created
+        int o = Test.get();
+        System.out.println("No of instances created: " + o);
+    }
+}
+
+Output
+Inside the method m1
+In method m2
+Control returned after m1: 1
+No of instances created: 1
+The control flow of the above program is as follows:
+
+Control Flow diagram of the Program
+
+Passing Parameters to a Method
+There are some cases when we don’t know the number of parameters to be passed or an unexpected case to use more parameters than declared number of parameters. In such cases we can use
+
+Passing Array as an Argument
+Passing Variable-arguments as an Argument
+Method Overloading.
+Memory Allocation for Methods Calls
+Methods calls are implemented through a stack. Whenever a method is called a stack frame is created within the stack area and after that, the arguments passed to and the local variables and value to be returned by this called method are stored in this stack frame and when execution of the called method is finished, the allocated stack frame would be deleted. There is a stack pointer register that tracks the top of the stack which is adjusted accordingly.
+
+Example: Accessor and Mutator Methods
+
+public class Sumit {
+    private int num;
+    private String n;
+
+    // Accessor (getter) methods
+    public int getNumber() {
+      return num;
+    }
+    public String getName() {
+      return n;
+    }
+
+    // Mutator (setter) methods
+    public void setNumber(int num) {
+      this.num = num;
+    }
+    public void setName(String n) {
+      this.n = n;
+    }
+
+    // Other methods
+    public void printDetails() {
+        System.out.println("Number: " + num);
+        System.out.println("Name: " + n);
+    }
+
+    // Main method to run the code
+    public static void main(String[] args) {
+        Geeks g = new Geeks();
+        g.setNumber(123);   // Set the number
+        g.setName("Write");   // Set the name
+        g.printDetails();
+    }
+}
+
+Output
+Number: 123
+Name: GFG Write
+Explanation: In the above example, the Geeks class contains private fields num and n, with getter and setter method to access and modify their values. The printDetails() method prints the values of num and n to the console. In the main method, the setNumber, setName, and printDetails methods are called to set and display the object’s details.
+
+Advantages of Methods
+Reusability: Methods allow us to write code once and use it many times.
+Abstraction: Methods allow us to abstract away complex logic and provide a simple interface for others to use.
+Encapsulation: Allow to encapsulate complex logic and data
+Modularity: Methods allow us to break up your code into smaller, more manageable units, improving the modularity of your code.
+Customization: Easy to customize for specific tasks.
+Improved performance: By organizing your code into well-structured methods, you can improve performance by reducing the amount of code.
+
+Chapter-4:-
+Access modifier:-
+In Java, Access modifiers helps to restrict the scope of a class, constructor, variable, method, or data member. It provides security, accessibility, etc. to the user depending upon the access modifier used with the element. In this article, let us learn about Java Access Modifiers, their types, and the uses of access modifiers.
+
+Types of Access Modifiers
+There are 4 types of access modifiers available in Java:
+
+Default – No keyword required
+Private
+Protected
+Public
+Java Access Modifiers
+1. Default Access Modifier
+When no access modifier is specified for a class, method, or data member, it is said to be having the default access modifier by default. The default access modifiers are accessible only within the same package.
+
+Example 1: Demonstrating Default Access Modifier Within the Same Package. In this example, we will create two packages and the classes in the packages will be having the default access modifiers and we will try to access a class from one package from a class of the second package.
+
+
+// default access modifier
+package p1;
+
+// Class Geek is having
+// Default access modifier
+class Geek
+{
+    void display()
+    {
+        System.out.println("Hello World!");
+    }
+}
+
+Example 2: Error when Accessing Default Modifier Class across Packages. In this example, the program will show the compile-time error when we try to access a default modifier class from a different package.
+
+
+// error while using class from different
+// package with default modifier
+package p2;
+import p1.*;    // importing package p1
+
+// This class is having
+// default access modifier
+class GeekNew {
+    public static void main(String args[]) {
+
+
+        Geek o = new Geek();
+
+        o.display();
+    }
+}
+2. Private Access Modifier
+The private access modifier is specified using the keyword private. The methods or data members declared as private are accessible only within the class in which they are declared.
+
+Any other class of the same package will not be able to access these members.
+Top-level classes or interfaces can not be declared as private because,
+private means “only visible within the enclosing class“.
+protected means “only visible within the enclosing class and any subclasses“.
+Hence these modifiers in terms of application to classes, apply only to nested classes and not on top-level classes.
+
+Example: In this example, we will create two classes A and B within the same package p1. We will declare a method in class A as private and try to access this method from class B and see the result.
+
+
+
+
+// error while using class from different package with
+// private access modifier
+package p1;
+
+// Class A
+class A {
+    private void display() {
+        System.out.println("Nothing");
+    }
+}
+
+// Class B
+class B {
+    public static void main(String args[]) {
+        A obj = new A();
+
+        // Trying to access private method
+        // of another class
+        obj.display();
+    }
+}
+Explanation: The above code will show a compile-time error when trying to access a private method from class B, even within the same package.
+
+3. Protected Access Modifier
+The protected access modifier is specified using the keyword protected. The methods or data members declared as protected are accessible within the same package or subclasses in different packages.
+
+Example 1: In this example, we will create two packages p1 and p2. Class A in p1 is made public, to access it in p2. The method display in class A is protected and class B is inherited from class A and this protected method is then accessed by creating an object of class B.
+
+
+// protected access modifier
+package p1;
+
+// Class A
+public class A {
+    protected void display() {
+        System.out.println("Nothing");
+    }
+}
+So, it demonstrates that a protected method is accessible within the same package.
+
+Example 2: In this example, we will create two packages, p1 and p2. Class A in p1 has a protected method display. Class B in p2 extends A and accesses the protected method through inheritance by creating an object of class B.
+
+
+// protected modifier
+package p2;
+
+// importing all classes
+// in package p1
+import p1.*;
+
+// Class B is subclass of A
+class B extends A {
+    public static void main(String args[]) {
+        B obj = new B();
+        obj.display();
+    }
+}
+Explanation: The above example demonstrates that a protected method is accessible in a subclass from a different package using inheritance.
+
+4. Public Access Modifier
+The public access modifier is specified using the keyword public.
+
+The public access modifier has the widest scope among all other access modifiers.
+Classes, methods, or data members that are declared as public are accessible from everywhere in the program. There is no restriction on the scope of public data members.
+Example 1: Here, the code shows that a public method is accessible within the same package.
+
+
+// public modifier
+package p1;
+
+public class A {
+
+public void display() {
+        System.out.println("Nothing");
+    }
+}
+
+Example 2: Here, the example shows that a public method is accessible across packages.
+
+
+// public access modifier
+package p2;
+
+import p1.*;
+
+class B {
+    public static void main(String args[]) {
+
+        A obj = new A();
+        obj.display();
+    }
+}
+Important Points:
+
+If other programmers use your class, try to use the most restrictive access level that makes sense for a particular member. Use private unless you have a good reason not to.
+
+Avoid public fields except for constants.
+
+Comparison Table of Access Modifiers in Java
+
+Comparison Table of Access Modifiers in Java
+
+Algorithm to Use Access Modifier in Java
+
+Here’s a basic algorithm for using access modifiers in Java:
+
+Define a class: Create a class to represent the object you want to manage.
+
+Define instance variables: Inside the class, define variables for the data you want to manage.
+
+Set an access modifier:
+
+Use private for variables only accessible within the class.
+
+Use protected for variables accessible within the class and its subclasses.
+
+Use public for variables accessible from anywhere.
+
+Use getter and setter methods: To access or modify variables, use getter (accessor) and setter (mutator) methods, even for public variables, to maintain encapsulation.
