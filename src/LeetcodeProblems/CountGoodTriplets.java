@@ -2,7 +2,7 @@ package LeetcodeProblems;
 
 public class CountGoodTriplets {
     public static void main(String[] args) {
-        // Test cases
+
         int[] arr1 = {3, 0, 1, 1, 9, 7};
         int a1 = 7, b1 = 2, c1 = 3;
         Solution solution = new Solution();
