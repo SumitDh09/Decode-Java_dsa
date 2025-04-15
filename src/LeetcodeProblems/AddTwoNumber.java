@@ -1,12 +1,13 @@
 package LeetcodeProblems;
 
-
+// Definition for singly-linked list
 class ListNode {
     int val;
     ListNode next;
 
     ListNode(int x) {
-        val = x;
+        this.val = x;
+        this.next = null;
     }
 }
 
@@ -29,31 +30,39 @@ public class AddTwoNumber {
 
         // Printing the result
         System.out.print("Result: ");
-        while (result != null) {
-            System.out.print(result.val);
-            if (result.next != null) {
-                System.out.print(" -> ");
-            }
-            result = result.next;
-        }
+        printList(result);
     }
 
+    // Utility method to print the linked list
+    public static void printList(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val);
+            if (head.next != null) {
+                System.out.print(" -> ");
+            }
+            head = head.next;
+        }
+        System.out.println();
+    }
+
+    // Method to add two numbers represented as linked lists
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode curr = dummy;
         int carry = 0;
 
         while (l1 != null || l2 != null || carry > 0) {
+            int sum = carry;
             if (l1 != null) {
-                carry += l1.val;
+                sum += l1.val;
                 l1 = l1.next;
             }
             if (l2 != null) {
-                carry += l2.val;
+                sum += l2.val;
                 l2 = l2.next;
             }
-            curr.next = new ListNode(carry % 10);
-            carry /= 10;
+            carry = sum / 10;
+            curr.next = new ListNode(sum % 10);
             curr = curr.next;
         }
 
